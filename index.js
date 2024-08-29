@@ -4,7 +4,7 @@ const app = express();
 const PORT = 3001;
 const { createTransport } = require("nodemailer");
 const cors = require("cors");
-app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
+app.use(cors({ credentials: true, origin: "https://sahilchopade.vercel.app" }));
 app.use(express.json());
 console.log(process.env.user,process.env.pass);
 const transporter = createTransport({
